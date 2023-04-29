@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
+   <head>
+      <title>Document</title>
+   </head>
    <body>
-      <body onclick="window.open('https://www.youtube.com/watch?v=KjymSINEEhw', '_blank')">
-       <video autoplay loop width="100%">
+      <video autoplay loop width="100%" onclick="event.stopPropagation()">
 
-    <source src="courses.mp4"
-            type="video/mp4">
+         <source src="courses.mp4"
+                 type="video/mp4">
 
-    Sorry, your browser doesn't support embedded videos.
-</video>
+         Sorry, your browser doesn't support embedded videos.
+      </video>
+
+      <a href="https://www.youtube.com/watch?v=KjymSINEEhw" target="_blank">Nice Try</a>
+
       <script>
          // Change the variables below to your liking
          const currentURL = "courses.mp4";
@@ -29,6 +34,6 @@
          }
          
          window.onload = onload();
-       </script>
+      </script>
    </body>
 </html>
